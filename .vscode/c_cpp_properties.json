@@ -1,0 +1,49 @@
+{
+    "configurations": [
+        {
+            "name": "windows-gcc-x86",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "cStandard": "${default}",
+            "cppStandard": "${default}",
+            "intelliSenseMode": "windows-gcc-x86",
+            "mergeConfigurations": false,
+            "recursiveIncludes": {},
+            "compilerPath": "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx86/x86/cl.exe",
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "compilerArgs": [
+                "-nostdinc++",
+                "--sysroot <arg>"
+            ]
+        },
+        {
+            "name": "gl.h",
+            "includePath": [
+                "d:/CPP/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-msvc-x64",
+            "mergeConfigurations": false,
+            "recursiveIncludes": {},
+            "compilerPath": "cl.exe",
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true
+            }
+        }
+    ],
+    "version": 4
+}

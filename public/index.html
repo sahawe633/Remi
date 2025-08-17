@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan socket.io</title>
+</head>
+<body>
+    <style>
+        #form{background: rgba(0, 0, 0, .15);padding: .25rem;position: fixed;bottom: 0;left: 0;right: 0;display: flex;height: 3rem;box-sizing: border-box;backdrop-filter: blur(10px);}
+        #input{border: none;padding: 0 1rem;flex-grow: 1;border-radius: 2rem;margin: 0.2rem;}
+        #input:focus{outline: none;}
+        .playersview{position: relative;width: vw;height: 400px;background: cadetblue;}
+        .playersview>div{position: absolute;width: 50px;height: 80px;background: indianred;}
+        #ambil{display: none;}
+        .player1{bottom: 0;left: 50%;}
+        .player2{top: 50%;right: 0;}
+        .player3{top: 0;left: 50%;}
+        .player4{top: 50%;left: 0;}
+        #card_view{display: flex; position: relative;height: 100px;bottom: 100px;}
+        .meja{display: flex; margin: auto;width: 400px !important;position: relative !important;justify-content: center;flex-wrap: wrap;}
+        .opsi{display: none;position: relative; bottom: 300px;left: 300px;}
+        .strike{position: absolute;bottom: 50px;right: 0;}
+        .kind{position: absolute;bottom: 50px;right: 200px;}
+        .disabled{opacity: .4;cursor: not-allowed;}
+        /* .meja>img{} */
+    </style>
+    <h1>Mechat</h1>
+    <form id="join">
+        <input type="text" id="room">
+        <input type="text" id="player">
+        <button type="submit">join</button>
+    </form>
+    <div id="game_play">
+        <ul class="waitlist"></ul>
+        <div class="playersview">
+            <button id="ambil">Ambil</button>
+            <div class="player1">Player1</div>
+            <div class="player2">Player2</div>
+            <div class="player3">Player3</div>
+            <div class="player4">Player4</div>
+            <div class="meja"></div>
+        </div>
+        <div class="strike"></div>
+        <div class="kind"></div>
+        <div id="card_view">
+        </div>
+        <ul class="listplayers"></ul>
+        <!-- <div class="opsi"> <span>option</span>
+            <img src="" alt="">
+            <button class="buang">Buang</button>
+            <button class="seri">Seri</button>
+            <button class="macam">Kembang</button>
+        </div> -->
+    </div>
+    <ul id="message"></ul>
+    <form action="" id="form"><input type="text" id="input"><button type="submit" value="room1">Send</button></form>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
